@@ -15,8 +15,8 @@ app.get('/about', function (req, res) {
 });
 
 // blog page
-app.get('/blogs', function (req, res) {
-  res.sendFile(path.join(__dirname, 'pages', 'blogs.html'));
+app.get('/blog', function (req, res) {
+  res.sendFile(path.join(__dirname, 'pages', 'blog.html'));
 });
 
 const staticPath = path.join(__dirname, 'static');
