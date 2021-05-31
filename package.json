@@ -1,0 +1,26 @@
+{
+  "name": "blog-express-ejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariusCodeAcademy/js3-Blog-crud-express-ejs.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "MK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MariusCodeAcademy/js3-Blog-crud-express-ejs/issues"
+  },
+  "homepage": "https://github.com/MariusCodeAcademy/js3-Blog-crud-express-ejs#readme",
+  "dependencies": {
+    "eslint": "^7.27.0",
+    "express": "^4.17.1"
+  }
+}
