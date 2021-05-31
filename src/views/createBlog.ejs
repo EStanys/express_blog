@@ -1,0 +1,34 @@
+<%- include('./partials/head.ejs') %>
+<!-- ikeliam bendra navigacijos faila -->
+<%- include('./partials/nav.ejs') %>
+
+ 
+<h1>Add new Blog post</h1>
+
+<form action='/api/blog' method="POST" id="add-blog-form">
+    
+    <div class="form-group" >
+      <label for="title">Your Title</label>
+      <input type="text" class="form-control" id="title" name="title"  placeholder="Enter title">
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" name="author"  placeholder="Enter author">
+    </div>
+    <div class="form-group">
+      <label for="text">Enter Post Text</label>
+      <textarea type="text" class="form-control" id="text" name="text"  placeholder="Enter text"> </textarea>
+    </div>
+
+    
+    <button type="submit" class="btn btn-primary">Add post</button>
+  </form>
+
+
+
+
+
+
+
+<!-- ikeliam bendra footer -->
+<%- include('./partials/footer.ejs') %>
