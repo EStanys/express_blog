@@ -28,8 +28,10 @@ mainForm.addEventListener('submit', function (event) {
   const formDataInJson = JSON.stringify(formDataPlain);
   console.log('formDataInJson',formDataInJson);
 
- MyFetch.createPost(formDataInJson);
- window.location.replace('/blog');
-
-
+ MyFetch.createPost(formDataInJson, (data)=> {
+   if (data.redirect){
+       window.location = data.redirect}
+ }
+  );
+  
 });

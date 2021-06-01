@@ -46,4 +46,17 @@ router.get('/blog/create', function (req, res) {
   });
 });
 
+// single page
+router.get('/singlePage/:id', function (req, res) {
+  const blogId = req.params.id
+  const found = blogDb.find(blog => blog.id === +blogId)
+  // todo: redirect if not found or no id given
+  console.log('found', found);
+  res.render('singlePage', {
+    title: 'Blog post',
+    page: 'singleBlog',
+    post: found
+  });
+});
+
 module.exports = router;

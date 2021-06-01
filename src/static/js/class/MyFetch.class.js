@@ -11,7 +11,7 @@ export default class MyFetch {
         return data;
     }
 
-    static async createPost(datas){
+    static async createPost(datas, successCallback){
          const res = await fetch(MyFetch.baseUrl, {
           
          method: 'POST',
@@ -23,7 +23,8 @@ export default class MyFetch {
          });
          const data = await res.json();
          // console.log(data)
-         return data;
+         return successCallback(data)
+         
 
     }
 }

@@ -26,7 +26,7 @@ router.post('/', (req, res)=>{
   };
   
   blogDb.push(newBlog);
-  res.json({ msg: 'success', newBlog });
+  res.json({ msg: 'success', redirect: '/blog' });
 })
 
 module.exports = router;

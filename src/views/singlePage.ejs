@@ -1,0 +1,28 @@
+<%- include('./partials/head.ejs') %>
+<!-- ikeliam bendra navigacijos faila -->
+<%- include('./partials/nav.ejs') %>
+
+ <h2 class="mb-3">Single page template</h2>
+<section class="jumbotron text-center">
+        <div class="container">
+            <div class="h-50">
+                  <img src="<%= post.imgUrl %>" alt="none" class="w-100 mb-3">
+                  </div>
+          <h1><%= post.title %> </h1>
+          <h6 class="text-muted"><%= post.author %> </h6>
+          <p class="lead text-muted"
+          
+            ><%= post.body %></p
+          >
+          <small class="text-muted mt-2"><%= post.date %> </small>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Edit</a>
+            <a href="#" class="btn btn-danger my-2">Delete</a>
+          </p>
+        </div>
+      </section>
+
+
+
+<!-- ikeliam bendra footer -->
+<%- include('./partials/footer.ejs') %>
